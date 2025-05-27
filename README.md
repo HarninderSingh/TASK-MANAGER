@@ -66,24 +66,43 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-# NeonTasks
+# NeonTasks – Smart Task Manager
 
-A futuristic, glassmorphic task manager built with React.  
-Features a sidebar, animated cards, neon accents, and a stats drawer.
+NeonTasks is a modern, visually appealing task management app built with React.  
+It helps you organize, track, and visualize your tasks with a stylish interface, dynamic stats, and responsive design.
 
-## Features
+---
 
-- Sidebar navigation
-- Glassmorphism cards
-- Neon accent colors
-- Animated stats drawer
-- Responsive grid layout
-- Modern fonts and icons
+## 🚀 What Can You Do With NeonTasks?
 
-## Quick Start
+- **Add New Tasks:**  
+  Quickly add tasks using the input bar and "Add Task" button.
 
-```bash
-npm install
-npm start
-```
-"# TASK-MANAGER" 
+- **Manage Tasks:**  
+  - Start and end tasks to track progress and completion time.
+  - Delete tasks you no longer need.
+
+- **Visualize Your Progress:**  
+  - See all your tasks as cards in a responsive grid.
+  - Instantly view how many tasks are **Completed**, **In Progress**, and the **Total**.
+  - See the **percentage of tasks completed**.
+
+- **Dynamic Stats:**  
+  - Task summary panel updates in real time.
+
+- **Dark Mode:**  
+  - Toggle between light and dark themes for comfortable viewing.
+
+- **Modern UI:**  
+  - Glassmorphism cards, neon accent colors, and smooth animations.
+  - Responsive design for desktop and mobile.
+
+---
+
+## 🛠️ How to Run This App
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd SmartTaskManagerReactApp
+   ```
