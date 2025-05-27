@@ -1,0 +1,167 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.full-window-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%);
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%);
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 1.25rem !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  aspect-ratio: 1 / 1; /* Makes the card more square */
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0;
+  animation: fadeInCard 0.7s ease forwards;
+}
+
+.card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  transition: all 0.2s;
+}
+
+.navbar {
+  border-radius: 0 0 1.5rem 1.5rem;
+  background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%) !important;
+  color: #fff !important;
+}
+
+.navbar .navbar-brand {
+  color: #fff !important;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+footer {
+  background: #f1f5f9 !important;
+  border-radius: 1.5rem 1.5rem 0 0;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #6366f1 0%, #06b6d4 100%);
+  border: none;
+}
+
+.btn-outline-primary {
+  border-color: #6366f1;
+  color: #6366f1;
+}
+
+.btn-outline-primary:hover {
+  background: #6366f1;
+  color: #fff;
+}
+
+input.form-control {
+  border-radius: 2rem 0 0 2rem;
+}
+
+.input-group .btn {
+  border-radius: 0 2rem 2rem 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #e0e7ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #a5b4fc;
+  border-radius: 4px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  color: #f1f5f9;
+}
+
+body.dark-mode .card {
+  background: #1e293b !important;
+  color: #f1f5f9;
+  box-shadow: 0 4px 24px rgba(34,197,94,0.08);
+}
+
+body.dark-mode .navbar {
+  background: linear-gradient(90deg, #166534 0%, #22c55e 100%) !important;
+  color: #fff !important;
+}
+
+body.dark-mode .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+body.dark-mode footer {
+  background: #334155 !important;
+  color: #f1f5f9;
+}
+
+body.dark-mode .btn-primary,
+body.dark-mode .btn-outline-primary:hover {
+  background: #22c55e !important;
+  color: #fff !important;
+}
+
+body.dark-mode .btn-outline-primary {
+  border-color: #22c55e;
+  color: #22c55e;
+}
+
+body.dark-mode input.form-control {
+  background: #334155;
+  color: #f1f5f9;
+  border-color: #22c55e;
+}
+
+.btn-green {
+  background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%);
+  border: none;
+  color: #fff;
+}
+.btn-green:hover {
+  background: #16a34a;
+  color: #fff;
+}
+.title-green {
+  color: #22c55e;
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-width: 200px;
+    min-height: 200px;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@keyframes fadeInCard {
+  to {
+    opacity: 1;
+  }
+}
